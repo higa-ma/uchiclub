@@ -1,0 +1,11 @@
+.header{
+    display: flex;
+    justify-content: space-between;
+    background-color: #b9eddd;
+    padding: 16px;
+    margin-bottom: 32px;
+}
+
+.btn{
+    font-size: 24px;
+}

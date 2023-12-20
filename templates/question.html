@@ -1,0 +1,31 @@
+{% extends "common.html" %}
+{% block content %}
+
+    <main class="question">
+            <div class="question-area">
+                <div class="question-a"><p>問題:{{problems[1]}}</p></div>
+                <div class="question-a"><p>方言:{{problems[6]}}です</p></div>
+            </div>
+            
+            <form action="/answer/{{number}}" method="post" class="answer-area">
+                <div class="answer-a"><p>解答の選択エリア</p></div>
+                <div class="answer-container">
+            
+                <div class="Aarea"><p>A</p></div>
+                    <div class="answer1-box">
+                        <div class="answer1"><input type="checkbox" class="answer1-input" name="A" value="{{choicesA[0][1]}}">{{choicesA[0][1]}}</div>
+                        <div class="answer1"><input type="checkbox" class="answer1-input" name="A" value="{{choicesA[1][1]}}">{{choicesA[1][1]}}</div>
+                    </div>
+            
+                <div class="Barea"><p>B</p></div>    
+                    <div class="answer2-box">
+                        <div class="answer2"><input type="checkbox" class="answer2-input" name="B" value="{{choicesB[0][1]}}">{{choicesB[0][1]}}</div>
+                        <div class="answer2"><input type="checkbox" class="answer2-input" name="B" value="{{choicesB[1][1]}}">{{choicesB[1][1]}}</div>
+                    </div>
+                </div>
+
+                <input type="submit" value="次の問題へ">
+            </form>
+            
+    </main>
+{% endblock %}

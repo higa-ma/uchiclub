@@ -1,0 +1,39 @@
+{% extends "common.html" %}
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- リセットCSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@4.0.0/destyle.css">
+    <!--style.css-->
+    <link rel="stylesheet" href="../static/css/top.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="top-photo">
+        <div class="box">
+        <h1 class="top-text">うちなーぐちクイズ</h1> 
+        </div>
+    </div>
+
+    <div class="comment">
+        <p>はいさい、ぐすーよ、ちゅーうがなびら！！</p>
+        <p>現在、沖縄県では方言（うちなーぐち）を喋れたり、
+            聞き取れたりする人が減少してきています。そこで、
+            今回は会話形式のクイズを作ってみました。</p>
+            
+        <p>それでは、チャレンジしてみよう！!</p>
+        <p></p>
+        <p></p>
+    </div>
+
+    <div class="next-btn">
+        <a href="/question/{{ploblem_No}}" class="btn_02">スタート</a>
+    </div>
+</body>
+</html>
+
+{% endblock %}

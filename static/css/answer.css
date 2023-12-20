@@ -1,0 +1,99 @@
+body{
+    font-family: 新丸ゴ;
+}
+
+main{
+    padding-top: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin: 20px;
+    
+    
+
+
+}
+
+.answer-title{
+    color: black;
+    font-size: 48px;
+    padding: 60px;
+    border-style: solid;
+    border-width: thick;
+    border-color: #edb9c9;
+    border-radius: 1rem;
+    
+}
+.answer{
+    padding: 5 px;
+    width: 100%;
+}
+
+/* .answer h1{
+    color: red;
+} */
+
+.sec1{
+    /* padding: 0 10px; */
+    /* margin: 10px; */
+    
+}
+
+h2{
+    font-size: 24px;
+    padding: 30px;
+}
+
+.type1 .type2{
+    font-weight: bold;
+}
+
+
+p{
+    padding: 10px 0;
+    
+}
+
+.sec2{
+    font-size: 20px;
+    padding: 30px;
+    margin: 30px;
+    text-align: right;
+    
+}
+.next-btn {
+        /* position:relative; */
+        /* top: calc(50% - .5em);
+        left: 1rem; */
+        display: flex;
+        justify-content: flex-end;
+        padding: 16px;
+      }
+.next {
+        /* position: absolute;
+        bottom: calc(50% - .5em);
+        right: 1rem;
+        background-color: #edb9c9; */
+        
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        max-width: 120px;
+        width: 100%;
+        padding: 18px 17px;
+        font-weight: bold;
+        border: 2px solid #27acd9;
+        background: #27acd9;
+        color: #fff;
+        transition: 0.5s;
+        right: 0;
+        bottom: 0;
+            
+        
+        }
+        a.btn_02:hover {
+            color: #27acd9;
+            background: #fff;
+
+      }
+
+    

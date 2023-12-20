@@ -1,0 +1,38 @@
+{% extends "common.html" %}
+{% block content %}
+
+
+    <!-- <div class="header">
+      <div class="header-logo"></div>
+
+      
+    </div> -->
+    
+    <div class="main">
+
+        <div class="container">
+
+            <div class="class1">
+                <img src="../static/img/IMG_2214.jpg" alt="沖縄海の" />
+            </div>
+          </div>
+        <h1>採点結果</h1>
+        <div class="background">
+          <div class="box">
+          <h2>{{correct}}問/{{all_ploblem}}問中 </h2>
+          </div>
+        </div>
+        <h3>正解</h3>
+        </div>
+    <div class="top-botton">
+      <a href="/" id="page-top"><i class="blogicon-chevron-up">トップへ戻る</i></a>
+    </div>
+
+    <div>
+      <form>
+        <input type="button" value="戻る" onClick="history.back()">
+      </form>
+    </div>
+
+
+{% endblock %}

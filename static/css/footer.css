@@ -1,0 +1,30 @@
+.footer{
+    width: 100%;
+    padding: 15px;
+    background-color: #b9eddd;
+    position: relative;
+}
+
+.subtitle{
+    padding:5px;
+    text-align: center;
+}
+
+.btn{
+    padding: 10px;
+    margin: 5px;
+}
+
+/* .top-btn{
+    position: absolute;
+    right: 16px;
+    bottom: 8px;
+    display: block;
+    border-radius: 30px;
+    text-decoration: none;
+    color: #fff;
+    padding: 16px;
+    max-width: 62px;
+    width: 17%;
+    background-color:#dd7c9a;
+} */

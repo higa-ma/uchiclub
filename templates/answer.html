@@ -1,0 +1,62 @@
+{% extends "common.html" %}
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- リセットCSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@4.0.0/destyle.css">
+    <!--style.css-->
+    <link rel="stylesheet" href="../static/css/answer.css">
+
+    <link rel="stylesheet" type="text/css" media="screen and ( max-width:768px )" href="css/style_sp.css">
+
+    <title>Document</title>
+    
+</head>
+<body>
+    <main>
+
+        <!-- 正解・不正解 -->
+    <div class="answer">
+        <h1 class="answer-title" style="text-align: center;">{{judge}}</h1>    </div>
+        <!-- 解説 -->
+    <div class="sec1">
+        <h2 style="text-align: center;">解説</h2>
+        <!-- 解説文 -->
+        <p class="type1">{{explan[0]}}</p>
+        <p class="type2">{{explan[1]}}</p>
+    </div>
+
+        <!-- 次へボタン -->
+
+        
+
+    <div class="next-btn">
+        <!-- <a href="" class="btn btn--purple btn--radius btn--cubic">
+            <i class="fas fa-angle-double-right fa-position-left"></i> -->
+            {% if number >= all_ploblem %}
+                <a class="next" href="/result">結果発表！</a>
+            {% elif number <all_ploblem %}
+                <a class="next" href="/question/{{ploblem_No}}">次の問題！</a>
+            <!-- <i class="fas fa-angle-double-left fa-position-right"></i> -->
+            {% endif %}
+        <!-- </a> -->
+    </div>
+
+    <div>
+        <form>
+          <input type="button" value="戻る" onClick="history.back()">
+        </form>
+      </div>
+  
+
+
+    </main>
+</body>
+</html>
+
+{% endblock %}
+

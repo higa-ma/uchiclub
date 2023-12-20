@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@4.0.0/destyle.css">
+
+    <link rel="stylesheet" href="../static/css/question.css">
+    <link rel="stylesheet" href="./css/style_sp.css" media="screen and (max-width:501px)">
+
+    <title>仮名</title>
+</head>
+<body>
+
+{% extends "common.html" %}
+{% block content %}
+
+<main class="question">
+<div class="question-area">
+    <div class="question-a"><p>問題 昼間波の海辺で犬と散歩した</p></div>
+    <div class="question-a"><p>方言</p></div>
+</div>
+
+<form action="" class="answer-area">
+    <div class="answer-a"><p>解答の選択エリア</p></div>
+    <div class="answer-container">
+
+    <div class="Aarea"><p>A</p></div>
+        <div class="answer1-box">
+            <div class="answer1-box"><input type="checkbox"></div>
+            <div class="answer1-box"><input type="checkbox"></div>
+        </div>
+
+    <div class="Barea"><p>B</p></div>    
+        <div class="answer2-box">
+            <div class="answer2-box"><input type="checkbox"></div>
+            <div class="answer2-box"><input type="checkbox"></div>
+        </div>
+
+    </div>
+
+    <div class="next-btn">
+        <a href="" class="btn_02">正解へ</a>
+ </div>
+
+ <div>
+    <form>
+      <input type="button" value="戻る" onClick="history.back()">
+    </form>
+  </div>
+
+ 
+
+</form>
+</main>
+
+</body>
+</html>
+{% endblock %}
+
+
+
+
+
+
+
